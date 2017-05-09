@@ -83,10 +83,11 @@ public class ApexDoc {
 
         // default scope to global and public if not specified
         if (rgstrScope == null || rgstrScope.length == 0) {
-            rgstrScope = new String[3];
+            rgstrScope = new String[4];
             rgstrScope[0] = "global";
             rgstrScope[1] = "public";
             rgstrScope[2] = "webService";
+            rgstrScope[3] = "private";
         }
 
         // find all the files to parse
